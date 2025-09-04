@@ -33,13 +33,12 @@ body {
 
 ul {
     margin: 0;
-    padding: 0 0 0 20px;
+    padding: 0;
 }
 
     ul li {
         list-style-type: disc; /* Use 'disc' for filled bullets or 'circle' for unfilled */
         font-weight: normal; /* Set the font weight to normal */
-        padding: 0 0 8px 0px;
     }
 
 
