@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Vinyl Player</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/circles.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/navBar.js" type="text/javascript" defer></script>
+    </head>
+
+    <body style="margin:0;">
+
+        <!-- MENU HEADER -->
+         <header-component> </header-component>
+
+
+
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; width: 100%; margin-top: 8rem">
+        <section id="vinylify-case-study" style="width: 800px;">
+            <div class="hero-section" >
+                <h1>Vinyl collection</h1>
+                <img src="images/vinylPlayer/image1.png" class="img-fluid" alt="svg image">
+            </div>      
+
+
+            <h4>Introduction</h4>
+            <article>
+                <p>As a music lover and vinyl collector, I enjoy the ritual of digging through my vinyl boxes, hunting for the perfect record to play. Most of the time, though, I listen to music on Spotify, where the focus is on speed rather than the joy of the process. </p>
+                <p>With this project, I wanted to reimagine that ritual in the digital world, creating a digital vinyl collection where albums feel as tangible and immersive as real records, and where each one evokes a unique atmosphere through its colors and the captivating motion of the spinning vinyl.</p>
+                <p><strong>Role:</strong> UX Engineering and Design — Interface design, React implementation, Spotify API integration</p>
+                <p><strong>Technologies:</strong> React, CSS, Spotify API</p>
+            
+            </article>
+
+            
+
+            <h4>User Experience</h4>
+            <article>
+                <p>I wanted it to evoke the feeling of browsing through my records: pulling them out, admiring the covers, and placing them on the turntable. Every interaction should recall that ritual.</p>
+
+                <h5>UX Goals:</h5>
+                <ul>
+                <li>Recreate the physical interaction of handling vinyls.</li>
+                <li>Keep search accessible and seamless.</li>
+                <li>Create a dynamic visual atmosphere that matches the music.</li>
+                </ul>
+
+                <video src="images/vinylPlayer/video1.mov" autoplay muted loop></video>
+            </article>
+
+            <h4> Design & Animation Decisions</h4>
+            <article>
+                <p>I wanted each album to have its own personality, so I rotated the records in the list differently, giving the feeling of a real collection that isn’t perfectly aligned. To enhance the experience further, I added a dynamic background for each album, creating a unique atmosphere that reflects its character.</p>
+                <ul>
+                <li><strong>Fixed search bar:</strong> Always visible to maintain exploration flow.</li>
+                <li><strong>Vinyl boxes:</strong> Album covers displayed as record sleeves; on hover, the disc slides out.</li>
+                <li><strong>Main interaction:</strong> On click, the disc fully slides out, places itself on the turntable, and spins until another is selected.</li>
+                <li><strong>Dynamic background:</strong> The app uses the album cover, blurs and enlarges it, and applies a gradient blend to reflect each record’s visual “mood.”</li>
+                </ul>
+                <div class="two-videos"> 
+                    <video src="images/vinylPlayer/video2.mov" autoplay muted loop></video>
+                    <video src="images/vinylPlayer/video3.mov" autoplay muted loop></video>
+                </div>
+
+
+            </article>
+
+            <h4>Technical Implementation</h4>
+            <article>
+                <p>Working on this project was both a true challenge and an opportunity to learn how to combine design and code to create a smooth experience.</p>
+
+                    <ul>
+                        <li>
+                            <strong>Spotify API Connection:</strong>
+                            <p>I set up authentication and obtained the token needed to fetch artists’ albums. This ensured the app could reliably display real data without interruptions.</p>
+                        </li>
+
+                        <div style="display: flex; align-items: flex-start; gap: 20px;">
+                            <li>
+                                <strong>Effects and State Management with React:</strong>
+                                <p>I used two <code>useEffect</code> to handle Spotify token fetching and trigger album searches based on user input, keeping the data synchronized with the interface. </p>
+                                <p>Meanwhile, <code>useState</code> managed key UI elements like the active album and background image, enabling smooth visual transitions and an adaptive design that reacted instantly to user interactions.</p>
+                            </li>
+                            <img src="images/vinylPlayer/flow.png" alt="svg image" style="width: 300%; margin-top: 1em; margin-bottom: 2em; margin-left: 2em;">
+                        </div>
+
+                        <li>
+                            <strong>CSS Transformations and Animations:</strong>
+                            <p>Managing multiple elements spinning and moving at the same time was tricky. I learned to use wrappers to isolate transformations and avoid conflicts, ensuring vinyls popped out, spun, and animated smoothly.</p>
+                        </li>
+
+                        <li>
+                            <strong>Responsive design:</strong>
+                            <p>Another important aspect was ensuring that the application worked well across different screen sizes. For that, my best friends were relative units like vmin, vh, and vw, which helped the vinyls, vinyl list, and turntable adapt smoothly to various resolutions. This kept the experience consistent and enjoyable.</p>
+                        </li>
+                        <video src="images/vinylPlayer/video4.mov" autoplay muted loop></video>
+                        
+                        <li>
+                            
+                            <strong>Project Organization:</strong>
+                            <p>I consolidated my React knowledge by structuring the app into container and presentational components and using CSS Modules to keep styles encapsulated and maintainable.</p>
+                            
+                        </li>
+                        <div style="display: flex; align-items: flex-start; gap: 20px;">
+                            <img src="images/vinylPlayer/image2.png"  alt="svg image">
+                            <img src="images/vinylPlayer/structure.png"  alt="svg image">
+                        </div>        
+                            
+                        
+                        
+                    </ul>
+
+
+        
+            </article>
+
+            <h4>🔍 Reflections & Learnings</h4>
+            <article>
+                <p>It was my first project integrating React with a real API. It pushed me to think not only about how to design a visually appealing experience but also how to structure it technically so it felt fluid and coherent.</p>
+
+                <h5>Learnings</h5>
+                <ul>
+                    <li>Working with elements with multiple CSS transformations and animations was hard at first, they don’t accumulate if defined separately, so each transformation and animation must be carefully planned.</li>
+                    <li>When React re-renders a component it can interrupt animations, making consistent visual state management essential.</li>
+                    <li>Passing setters as props to other modules allows synchronizing global visuals, such as dynamic background changes, connecting logic to user experience.</li>
+                    <li>For the background i had to be creative with blend modes, blur and gradients to find a way to automate getting a unique feeling of each album.</li>
+                </ul>
+
+                <h5>Next Steps</h5>
+                <ul>
+                <li>Add a loading skeleton.</li>
+                <li>Add Spotify preview playback.</li>
+                <li>Improve accessibility (alt text, keyboard navigation).</li>
+                </ul>
+            </article>
+
+            <video src="images/vinylPlayer/video5.mov" autoplay muted muted loop></video>
+
+            <div class="buttonContainer">
+                <a href="https://github.com/blancamaco/vinyl-collection" class="button">See in Github</a>
+            </div>
+        
+    </section>
+
+    </div>
+
+    <!--FOOTER-->
+    <footer-component> </footer-component>
+
+    </body>
+        <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    <script src="js/circles.js"></script>
+    <script>AOS.init({
+            duration: 1000,
+            delay: 100
+        });</script>
+    <script type="text/javascript">function show() {
+            document.getElementById('img1').style.visibility = 'visible';
+        }
+        function hide() {
+            document.getElementById('img1').style.visibility = 'hidden';
+        }</script>
+</html>

@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/circles.css">
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/navBar.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
     
 
     <!-- MAIN STYLE -->
@@ -30,43 +33,11 @@
   </head>
   <body>
 
-    <!-- MENU -->
-    <nav class="navbar navbar-expand-sm navbar-light">
-        <div class="container" style="max-width:1170px">
-            <a class="navbar-brand prjLink" href="index.html"> Blanca</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul style="margin-right: 0 !important;" class="navbar-nav mx-auto">
-                    <li class="nav-item" style="list-style:none">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item" style="list-style:none">
-                        <a href="#project" class="nav-link">Projects</a>
-                    </li>
-                    <li class="nav-item" style="list-style:none">
-                        <a target="_blank" href="https://www.linkedin.com/in/blancamaco/" class="nav-link">CV</a>
-                    </li>
-                    
-                </ul>
-
-                <!--<ul class="navbar-nav ml-lg-auto">
-                    <div class="ml-lg-4">
-                      <div class="color-mode d-lg-flex justify-content-center align-items-center">
-                        <i class="color-mode-icon"></i>
-                        Color mode
-                      </div>
-                    </div>
-                </ul>-->
-            </div>
-        </div>
-    </nav>
+    <!-- MENU HEADER -->
+      <div class="landing">
+         <header-component> </header-component>
+      </div>
+         
 
     <!-- ABOUT -->
     <section class="about colors d-lg-flex justify-content-center align-items-center">
@@ -113,8 +84,9 @@
                         </h1>
                         <div>
                         	<h2>
-                        		A <span class="underline">Product Designer</span> with a technical background and experience designing products in startups.
-								I’m a <span class="underline">technology enthusiast</span>, a <span class="underline">coder</span>, a <span class="underline">curious human being</span> and <span class="underline">constant learner</span> who loves to craft enjoyable experiences. I'm very passionate about working on meaningful projects, understanding people needs and helping them to improve their everyday life.
+                        		A <span class="underline">Product Designer</span> & <span class="underline">UX Engineer</span> combining years of experience designing products with growing frontend development skills. 
+                            <br><br>I’m passionate about bridging <span class="underline">design</span> and <span class="underline">code</span> to create interactive and user-centered experiences
+								<!-- I’m a <span class="underline">technology enthusiast</span>, a <span class="underline">coder</span>, a <span class="underline">curious human being</span> and <span class="underline">constant learner</span> who loves to craft enjoyable experiences.  -->
                         	</h2>
 
                           <!-- <h2>I'm a <span class="underline">Digital Product Designer</span>, but also also a <span class="underline">technology enthusiast</span>, a graphic designer, and a never stop lerner with experience working in <span class="underline">startups</span>. <span class="flower" style="font-size: 0.5em; color: rgb(255, 122, 112);"> <a href="#about">Read more-></span> </a></h2> -->
@@ -148,367 +120,206 @@
     </section>
 
 
+    
     <!-- PORTFOLIO -->
-    <section>
-        <div class="container" id="project" style="max-width:1170px">
-                
-                <div  class="row">
-                  <div class="col-lg-12 mx-auto col-12">
+    <div class="portfolio">
+      <!--WORK-->
+      <section id="projects">
+        <div style="display: flex; justify-content: center; margin: 2em 2em;">
+          <h1 style="width: 1170px;">Projects</h1>
+        </div>
+        
+        <div class="projectsContainer">
+          <div class="projects">
 
-                      <div style="margin-top: 6em;">
-                        <h1>Work</h1>
-                      </div>
+              <div class="project">
+                <div class="image">
+                  <a href="vinylPlayer.html">
+                    <img src="images/VinylPlayer/vinylHeader.png" class="img-fluid" alt="portfolio image">
+                  </a>
+                </div>
+                <div class="text" style="display: flex; flex-direction: column; justify-content: left;">
+                  <h4>Vinyl Collection App</h4>
+                  <p>A music player app that simulates a vinyl record player experience.</p>
+                  <div class="pills">
+                    <div class="pill orange">
+                      <h6>Frontend Development</h6>
+                    </div>
+                    <div class="pill blue">
+                      <h6>React</h6>
+                    </div>
+                    <div class="pill">
+                      <h6>Design</h6>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
 
-
-                      <div class="row" data-aos="fade-up" style="margin-top: 4em" class="aos-init aos-animate">
-
-                          <!---Tuna Voicemod--->
-                          <div style="
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;
-                        }" class="col-lg-6">
-                              <div style="padding-top: 0em">
-				  <a rel="nofollow" href="voicemodTunaSearch.html">
-                                      <img src="images/Voicemod/Search/tunaHeader.png" class="img-fluid grow shadow2 prjImg" alt="project image" style="max-height:378.41px">
-                                  </a>
-                                  <div style=" center;align-items: left;  }">
-                                      <div>
-                                          <a class="prjLink" rel="nofollow " href="voicemodTunaSearch.html" style="">
-                                              <h2 class="h2prj" style="padding-top: 1em;">Tuna Content Hub by Voicemod</h2>
-                                          </a>
-                                          <h6>Product Design</h6>
-                                          <p>Enhancing the sound search experience for Tuna users.</p>
-
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-    <!---Voicemod Clips--->
-                          <div style="
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;
-                        }" class="col-lg-6">
-                              <div style="padding-top: 0em">
-                                  <a rel="nofollow" href="voicemodClips.html">
-                                      <img src="images/Voicemod/Clips/clipsHeader.png" class="img-fluid grow shadow2 prjImg" alt="project image" style="max-height:378.41px">
-                                  </a>
-                                  <div style=" center;align-items: left;  }">
-                                      <div>
-                                          <a class="prjLink" rel="nofollow " href="voicemodClips.html" style="">
-                                              <h2 class="h2prj" style="padding-top: 1em;">Voicemod Clips</h2>
-                                          </a>
-                                          <h6>Product Design</h6>
-                                          <p>Bringing Voicemod voice changing technology to iOS and Android.</p>
-
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <!---Geoblink--->
-                          <div style="
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;
-                        }" class="col-lg-6">
-                              <div style="padding-top: 2em;">
-                                  <a rel="nofollow" href="geoblink.html">
-                                      <img src="images/Portfolio-Geoblink-WEB.png" class="img-fluid grow shadow2 prjImg" alt="project image">
-                                  </a>
-                                  <div style="
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;  }">
-                                      <div>
-                                          <a class="prjLink" rel="nofollow " href="geoblink.html" style="">
-                                              <h2 class="h2prj" style="padding-top: 1em;">Geoblink Location Management Platform</h2>
-                                          </a>
-                                          <h6>Product Design</h6>
-                                          <p>Design of the Geoblink web application, improving the user experience, researching new features and interviewing users.</p>
-
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <!---Printeria--->
-
-                          <div style="
-                          /*display: flex;*/
-                          justify-content: center;
-                          align-items: center;
-                        }" class="col-lg-6">
-                              <div style="padding-top: 2em;">
-                                  <a rel="nofollow" href="printeria.html">
-                                      <img src="images/Portfolio-Printeria-WEB-2.png" class="img-fluid grow shadow2 prjImg" alt="project image">
-                                  </a>
-                                  <div style="
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;  }">
-                                      <div>
-                                          <a class="prjLink" rel="nofollow " href="printeria.html" style="">
-                                              <h2 class="h2prj" style="padding-top: 1em;">Printeria Controller</h2>
-                                          </a>
-                                          <h6>Web Design & Development</h6>
-                                          <p>Design and development of a responsive web application to control a biological printer.</p>
-
-                                      </div>
-                                  </div>
-                              </div>
-
-
-
-                              <!---iGEM--->
-                          </div><div style="
-                          display: flex;
-                          align-items: center;
-                        }" class="col-lg-6">
-                              <div style="padding-top: 2em;">
-                                  <a rel="nofollow" href="webigem.html">
-                                      <img src="images/Portfolio-iGEM-WEB-2.png" class="img-fluid grow shadow2 prjImg" alt="project image">
-                                  </a>
-                                  <div style="
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;  }">
-                                      <div>
-                                          <a class="prjLink" rel="nofollow " href="webigem.html" style="">
-                                              <h2 class="h2prj" style="padding-top: 1em;">UPV iGEM 2018 Team Website</h2>
-                                          </a>
-                                          <h6>Web Design</h6>
-                                          <p>Design and development of the UPV iGEM 2018 team website, where all the project information was documented.</p>
-
-                                      </div>
-                                  </div>
-                              </div>
-
-
-                          </div>
-
-
-                          <!---Tutorio--->
-                          <div class="col-lg-6" style="
-                          justify-content: center;
-                          align-items: center;
-                        }">
-                              <div style="padding-top: 2em;">
-                                  <a rel="nofollow" href="tutorio.html">
-                                      <img src="images/Portfolio-Tutorio-WEB-2.png" class="img-fluid grow shadow2 prjImg" alt="project image">
-                                  </a>
-                                  <div style="
-                          justify-content: center;
-                          align-items: center;  }">
-                                      <div>
-                                          <a class="prjLink" rel="nofollow " href="tutorio.html" style="">
-                                              <h2 class="h2prj" style="padding-top: 1em;">Tutorio iOS App and website design</h2>
-                                          </a>
-                                          <h6>UI & Web design</h6>
-                                          <p>Visual and graphic design of Tutorio's iOS App and website, where students could find their most suitable study partners.</p>
-
-                                      </div>
-                                  </div>
-                              </div>
-
-                          </div>
-
-
-                          <!---Juicy--->
-		<!--
-                          <div style="
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;
-                        }" class="col-lg-6">
-                              <div style="padding-top: 2em;">
-                                  <a rel="nofollow" href="juicy.html">
-                                      <img src="images/Portfolio-JuicySmoothie-WEB-2.png" class="img-fluid grow shadow2 prjImg" alt="project image">
-                                  </a>
-                                  <div style="
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;  }">
-                                      <div>
-                                          <a class="prjLink" rel="nofollow " href="juicy.html" style="">
-                                              <h2 class="h2prj" style="padding-top: 1em;">Juicy Smoothie  website</h2>
-                                          </a>
-                                          <h6>Case Study</h6>
-                                          <p>Case study from analysis to web design of a home delivery restaurant.</p>
-
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-			-->
-
-                      </div>
-
-<!--CUADRÍCULA-->
-
-<!--CUADRÍCULA-->
-                      <h1 style="margin-top: 2em" >Side projects</h1>
-
-                      <div class="row justify-content-center" >
-                      
-                
-
-                        
-<div class="col-lg-5" style="
-                          justify-content: center;
-                          align-items: center;
-                          margin-top: 2em; 
-                        }">
-                          <div data-aos="fade-up" style="/* margin-right: 2em */" class="aos-init aos-animate">
-                            <a rel="nofollow" href="https://www.behance.net/gallery/90110257/Space-travel-App">
-                             <img src="images/Portfolio-Space-WEB.png" class="img-fluid grow shadow2" alt="project image">
-                           </a>
-                           
-                          </div>
-
-			<div data-aos="fade-up" style="margin-top: 2em" class="aos-init aos-animate">
-                            <a rel="nofollow" href="juicy.html">
-                             <img src="images/Portfolio-JuicySmoothie-WEB-2.png" class="img-fluid grow shadow2" alt="project image">
-                           </a>
-                           
-                          </div>	
-                           
-                        </div><div class="col-lg-4" style="
-                          justify-content: center;
-                          align-items: center;
-                          margin-top: 2em; 
-                        }">
-                          <div data-aos="fade-up" style="margin-right: 0em; /* margin-top: 20em */" class="aos-init aos-animate">
-                            <a rel="nofollow" href="https://www.behance.net/gallery/93455823/Music-App-concept">
-                             <img src="images/Portfolio-Music-WEB.png" class="img-fluid grow shadow2" alt="project image">
-                           </a>
-                           
-                          </div>
-                           <div data-aos="fade-up" style="margin-top: 2em; /* margin-right: 2em */" class="aos-init aos-animate">
-                            <a rel="nofollow" href="https://www.behance.net/gallery/91855145/Apple-Macintosh-vectorial-icons">
-                             <img src="images/Portfolio-Icons-WEB.png" class="img-fluid grow shadow2" alt="project image">
-                           </a>
-                           
-                          </div>
-                        </div>    
-
-                          <div class="col-lg-3" style="
-                          justify-content: center;
-                          align-items: center;
-                        }">
-
-                        
-
-                          
-
-                          <div data-aos="fade-up" style="margin-top: 2em" class="aos-init aos-animate">
-                            <a rel="nofollow" href="https://www.behance.net/gallery/90283053/Washington-DC-Olympics-Logo">
-                             <img src="images/Portfolio-WDC-WEB2.png" class="img-fluid grow shadow2" alt="project image">
-                           </a>
-                           
-                          </div>
-                          
-                        </div>
-                      </div>
-
-                    
-
-<!--                       <div class="row justify-content-center" data-aos="fade-up" style=" margin-top: 5em;">
-                      <div class="col-lg-8 mx-auto">
-                      </div>
-                
-
-                        <div class="col-lg-5" style="
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;
-                          margin-top: 4em; 
-                        }">
-                          <div style="margin-right: 1em">
-                            <a rel="nofollow" href="https://www.behance.net/gallery/90110257/Space-travel-App">
-                             <img  src="images/Portfolio-Space-WEB.png" class="img-fluid" alt="project image" >
-                           </a>
-                           <a rel="nofollow" href="https://www.behance.net/gallery/91855145/Apple-Macintosh-vectorial-icons">
-                            </a>
-                          </div>
-                        </div>    
-
-                          <div class="col-lg-5" style="
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;
-                          margin-top: 20em; 
-                        }">
-                          <div style="margin-left: 1em">
-                            <a rel="nofollow" href="https://www.behance.net/gallery/91015069/iGEM-2018-Team-website">
-                             <img  src="images/Portfolio-Icons-WEB.png" class="img-fluid" alt="project image" >
-                           </a>
-                           <a rel="nofollow" href="https://www.behance.net/gallery/91855145/Apple-Macintosh-vectorial-icons">
-                             
-                            </a>
-                          </div>
-                          
-                        </div>
-                      </div>  
-
-                       <div class="row justify-content-center" data-aos="fade-up" style="">
-                      <div class="col-lg-8 mx-auto" style="margin-bottom: 1em">
-                     
-                      </div>
-                
-
-                        <div class="col-lg-5" style="
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;
-                          margin-top: 0em; 
-                          margin-bottom: 4em;
-                        }">
-                          <div style="margin-right: 1em">
-                            <a rel="nofollow" href="https://www.behance.net/gallery/90110257/Space-travel-App">
-                             <img src="images/Portfolio-Music-WEB.png" class="img-fluid" alt="project image" >
-                           </a>
-                           <a rel="nofollow" href="https://www.behance.net/gallery/91855145/Apple-Macintosh-vectorial-icons">
-                             
-                            </a>
-                          </div>
-                        </div>    
-
-                          <div class="col-lg-5" style="
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;
-                          margin-top: 20em; 
-                        }">
-                          <div style="margin-left: 1em">
-                            <a rel="nofollow" href="https://www.behance.net/gallery/91015069/iGEM-2018-Team-website">
-                             <img src="images/Portfolio-WDC-WEB2.png" class="img-fluid" alt="project image" >
-                           </a>
-                           <a rel="nofollow" href="https://www.behance.net/gallery/91855145/Apple-Macintosh-vectorial-icons">
-                              
-                            </a>
-                          </div>
-                          
-                        </div>
-                      </div>  
-                      <div >
-                          <a rel="nofollow" href="https://www.behance.net/gallery/90937401/iGEM-2018-Software-Project">
-                            	<p style="font-size: 1.5em">See more work on my Behance</p>
-                          </a>
-                          
-                        </div> -->
-
-
-<!-- FIN CUADRÍCULA-->                    
-
-                      </div>
-
+              <!-- Tuna Voicemod -->
+              <div class="project">
+                <div class="image">
+                  <a href="voicemodTunaSearch.html">
+                    <img src="images/Voicemod/Search/tunaHeader.png" class="img-fluid" alt="portfolio image">
+                  </a>
+                </div>
+                <div class="text" style="display: flex; flex-direction: column; justify-content: left;">
+                  <h4>Tuna Content Hub by Voicemod</h4>
+                  <p>Enhancing the sound search experience for Tuna users.</p>
+                  <div class="pill">
+                    <h6>Product Design</h6>
                   </div>
                 </div>
+              </div>
+
+              <!-- Voicemod Clips -->
+              <div class="project">
+                <div class="image">
+                  <a href="voicemodClips.html">
+                    <img src="images/Voicemod/Clips/clipsHeader.png" class="img-fluid" alt="portfolio image">
+                  </a>
+                </div>
+                <div class="text" style="display: flex; flex-direction: column; justify-content: left;">
+                  <h4>Voicemod Clips</h4>
+                  <p>Bringing Voicemod voice changing technology to iOS and Android.</p>
+                  <div class="pill">
+                    <h6>Product Design</h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Geoblink -->
+              <div class="project">
+                <div class="image">
+                  <a href="geoblink.html">
+                    <img src="images/Portfolio-Geoblink-WEB.png" class="img-fluid" alt="portfolio image">
+                  </a>
+                </div>
+                <div class="text" style="display: flex; flex-direction: column; justify-content: left;">
+                  <h4>Geoblink Location Management Platform</h4>
+                  <p>Design of the Geoblink web application, improving the user experience, researching new features and interviewing users.</p>
+                  <div class="pill">
+                    <h6>Product Design</h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Printeria -->
+              <div class="project">
+                <div class="image">
+                  <a href="printeria.html">
+                    <img src="images/Portfolio-Printeria-WEB-2.png" class="img-fluid" alt="portfolio image">
+                  </a>
+                </div>
+                <div class="text" style="display: flex; flex-direction: column; justify-content: left;">
+                  <h4>Printeria Controller</h4>
+                  <p>Design and development of a responsive web application to control a biological printer.</p>
+                  <div class="pills">
+                    <div class="pill orange">
+                      <h6>Frontend Development</h6>
+                    </div>
+                    <div class="pill">
+                      <h6>Product Design</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- iGEM -->
+              <div class="project">
+                <div class="image">
+                  <a href="webigem.html">
+                    <img src="images/Portfolio-iGEM-WEB-2.png" class="img-fluid" alt="portfolio image">
+                  </a>
+                </div>
+                <div class="text" style="display: flex; flex-direction: column; justify-content: left;">
+                  <h4>UPV iGEM 2018 Team Website</h4>
+                  <p>Design and development of the UPV iGEM 2018 team website, where all the project information was documented.</p>
+                  <div class="pills">
+                    <div class="pill orange">
+                      <h6>Frontend Development</h6>
+                    </div>
+                    <div class="pill">
+                      <h6>Product Design</h6>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Tutorio -->
+              <div class="project">
+                <div class="image">
+                  <a href="tutorio.html">
+                    <img src="images/Portfolio-Tutorio-WEB-2.png" class="img-fluid" alt="portfolio image">
+                  </a>
+                </div>
+                <div class="text" style="display: flex; flex-direction: column; justify-content: left;">
+                  <h4>Tutorio iOS App and Website Design</h4>
+                  <p>Visual and graphic design of Tutorio's iOS App and website, where students could find their most suitable study partners.</p>
+                  <div class="pills">
+                    <div class="pill green">
+                      <h6>UI design</h6>
+                    </div>
+                    <div class="pill orange">
+                      <h6>Frontend Development</h6>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+      </section>
+
+      <!--SIDE PROJECTS -->
+      <section id="sideProjects">
+        <div style="display: flex; justify-content: center; margin: 2em 2em;">
+          <h1 style="width: 1170px;">Side projects</h1>
         </div>
-    </section>
+        <div class="projectsContainer">
+          <div class="projects">
+            <div class="column">
+              <div class="sideProject">
+                <a href="https://www.behance.net/gallery/90110257/Space-travel-App">
+                  <img src="images/Portfolio-Space-WEB.png" alt="portfolio image">
+                </a>
+              </div>
+              <div class="sideProject">
+                <a href="juicy.html">
+                  <img src="images/Portfolio-JuicySmoothie-WEB-2.png" alt="portfolio image">
+                </a>
+              </div>
+            </div>
+            <div class="column">
+              <div class="sideProject">
+                <a href="https://www.behance.net/gallery/93455823/Music-App-concept">
+                  <img src="images/Portfolio-Music-WEB.png" alt="portfolio image">
+                </a>
+              </div>
+              <div class="sideProject">
+                <a href="https://www.behance.net/gallery/91855145/Apple-Macintosh-vectorial-icons">
+                  <img src="images/Portfolio-Icons-WEB.png" alt="portfolio image">
+                </a>
+              </div>
+
+            </div>
+            <div class="column">
+              <div class="sideProject">
+                <a href="https://www.behance.net/gallery/90283053/Washington-DC-Olympics-Logo">
+                  <img src="images/Portfolio-WDC-WEB2.png" alt="portfolio image">
+                </a>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+     </div>
+
+
 
 
 
@@ -608,7 +419,7 @@
 
             <!---Ventana--->
                  <div style="padding-top: 6em">
-                  <p><strong>When I'm not working, you can catch me:</strong>
+                  <p><strong>When I'm not working, you can find me:</strong>
                     
                      <ul>
                       <p style="margin-bottom: 0em;">📸  Taking photos of nature and architecture</p>
@@ -734,7 +545,7 @@
                             <p>
                               Worked on Voice & Chat experiences to drive adoption and enhance in-game communication. Also worked on mobile engagement features such as widgets and data visualization dashboards to improve the overall player experience.
                             </p>
-                            <h6>#ProductDesign #SocialCommunication #Web #Desktop #iOS #Android #Research #DataVisualization </h6>
+                            <h6 class="tag">#ProductDesign #SocialCommunication #Web #Desktop #iOS #Android #Research #DataVisualization </h6>
                         </div>
 
                       </div>
@@ -747,7 +558,7 @@
                                 <p>
                                   Designed social features and a user-generated content platform across Community Content team, Mobile team, and Growth team, enhancing in-game communication.
                                 </p>
-                                <h6>#ProductDesign #Web #Desktop #iOS #Android #Research #Community</h6>
+                                <h6 class="tag">#ProductDesign #Web #Desktop #iOS #Android #Research #Community</h6>
                             </div>
 
                         </div>
@@ -760,7 +571,7 @@
                                 <p>
                                   Designed B2B data visualization dashboards, turning complex requirements into intuitive, high-fidelity experiences through client research, prototyping, and design system support.
                                 </p>
-                                <h6>#UX #UI #Research #Agile </h6>
+                                <h6 class="tag">#UX #UI #Research #Agile </h6>
                             </div>
 
                         </div>
@@ -774,7 +585,7 @@
                                     Side project. Designed and coded a web app for a biological printer and the website of the project. The project was presented in the international biology
                                     competition iGEM in Boston. We won the best undergraduate project award, best software and best website among other awards.
                                 </p>
-                                <h6>#HTLM #CSS #JavaScript #Angular #UX #Entrepreneurship #Agile #SCRUM</h6>
+                                <h6 class="tag">#HTLM #CSS #JavaScript #Angular #UX #Entrepreneurship #Agile #SCRUM</h6>
                             </div>
 
                         </div>
@@ -787,7 +598,7 @@
                             <div class="timeline-info">
                                 <h4><span>Software Developer Intern</span><small>Informance</small></h4>
                                 <p>I took part in the development and management of small software projects of the company, mainly using Java, JavaScript, jQuery, SQL HTML and CSS.</p>
-                                <h6>#Java #JavaScript #jQuery #SQL #HTML #CSS</h6>
+                                <h6 class="tag">#Java #JavaScript #jQuery #SQL #HTML #CSS</h6>
                             </div>
                         </div>
 
@@ -798,7 +609,7 @@
                             <div class="timeline-info">
                                 <h4><span>UI and Graphic Designer</span><small>Tutorio</small></h4>
                                 <p>Tutorio is an App that allows students to find the most suitable study partners and businesses. The startup was incubated at Demium Startups Valencia. I created all the graphic material, the website and helped with the app visual design.</p>
-                                <h6>#Photoshop #Illustrator #UI #HTML #CSS</h6>
+                                <h6 class="tag">#Photoshop #Illustrator #UI #HTML #CSS</h6>
                             </div>
                         </div>
 
@@ -817,6 +628,17 @@
                 <div class="col-lg-12 col-12">
 
                     <div class="timeline">
+
+                      <div class="timeline-wrapper">
+                            <div class="timeline-yr">
+                                
+
+                            </div>
+                            <div class="timeline-info">
+                                <h4><span>Frontend Engineering</span><small>Codeacademy</small></h4>
+                            </div>
+                        </div>
+
                         <div class="timeline-wrapper">
                           
 
@@ -825,9 +647,7 @@
                              </div>
                              <div class="timeline-info">
                                   <h4  ><span>MA, Graphic Arts</span><small>Polytechnic University of Valencia</small></h4>
-                                  <p>
-                                    
-                                  </p>
+      
 
 
 
@@ -841,7 +661,7 @@
 
                             </div>
                             <div class="timeline-info">
-                                <h4><span>BS, Computer Science (Erasmus)</span><small>RWTH Aachen, Germany</small></h4>
+                                <h4><span>BS, Computer Science (Exchange)</span><small>RWTH Aachen, Germany</small></h4>
                             </div>
                         </div>
                         
@@ -1015,27 +835,8 @@
       </div>
     </section>-->
 
-    <footer id="footer" class="footer" style="padding: 4em;">
-      
-      
-      <div class="row">
-        
-        <div style=" font-size: 3em; text-align: right;" class="col-lg-6 col-md-6">
-          <a class="prjLink" style="color: white; margin: 0.1em" href="mailto:blancamadococa@gmail.com?subject=To%20Blanca%20Madorran" class="email-ver2">
-            <i class="fa fa-envelope growMore" aria-hidden="true"></i>
-          </a> 
-          <a class="prjLink" style="color: white; margin: 0.1em" href="https://www.linkedin.com/in/blancamaco/">
-            <i class="fa fa-linkedin-square growMore" aria-hidden="true"></i>
-          </a> 
-          <a class="prjLink" style="color: white; margin: 0.1em" href="https://www.behance.net/blancamaco">
-            <i class="fa fa-behance-square growMore" aria-hidden="true"></i>
-          </a>
-        </div>
-       
-      </div>
-      </div>
-      
-          </footer>
+    <!--FOOTER-->
+    <footer-component> </footer-component>
 
     
 
