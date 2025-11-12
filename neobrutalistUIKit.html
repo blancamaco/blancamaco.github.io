@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Neobrutalist UI Kit</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/unicons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/circles.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/navBar.js" type="text/javascript" defer></script>
+    </head>
+
+    <body>
+
+         <!-- MENU HEADER -->
+         <header-component> </header-component>
+
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; width: 100%; margin-top: 8rem">
+            
+            <section id="neobrutalist-ui-kit" style="width: 800px;">
+            <div class="hero-section">
+                <h1>Neobrutalist UI Kit</h1>
+                <img src="images/neobrutalistUI/image1.png" class="img-fluid" alt="UI Kit preview">
+            </div>
+
+            <h4>Project Overview</h4>
+            <article>
+                <p>
+                    I’ve been fascinated by the rise of the Neobrutalist style trend, with bold shapes, thick borders, and nostalgic 
+                    web 1.0 energy feels like a refreshing break from minimalist design. I wanted to see how far this aesthetic could go when applied 
+                    systematically, not just as decoration but as functional and reusable component library.
+                </p>
+                <p>
+                    The result is the <strong>Neobrutalist UI Kit</strong>, a <strong>React + Tailwind CSS</strong> component library.
+                </p>
+                <p>
+                    Building this project was also my opportunity to deepen my understanding of <strong>Tailwind CSS</strong> and experiment with 
+                    how custom utilities and design tokens could be combined to create a consistent visual language inside <strong>React components</strong>.
+                </p>
+                <p><strong>Role:</strong> UI Design & Frontend Development — Component architecture, React implementation, Tailwind customization</p>
+                <p><strong>Technologies:</strong> React, Tailwind CSS, Figma</p>
+            </article>
+
+    
+
+            <h4>Design Process</h4>
+            <article>
+                <p>
+                I started with a visual exploration phase, analyzing Neobrutalist interfaces from where I identified several recurring elements that define the style:
+                </p>
+                <ul>
+                <li><strong>Visual language:</strong> Bold borders, flat colors, and slightly offset shadows for depth.</li>
+                <li><strong>Typography:</strong> Geometric and heavy-weight typefaces with personality.</li>
+                <li><strong>Color system:</strong> Limited palette using vivid accents against neutral backgrounds for contrast.</li>
+                </ul>
+                <img src="images/neobrutalistUI/image2.png" alt="Style eferences" style="margin-top: 1em;">
+            </article>
+
+            <h4>Development Process</h4>
+            <article>
+                <h5>Component Architecture</h5>
+                <div style="display: flex; gap: 4em;">
+                    <p>
+                    Each UI element (inputs, buttons, toggles, dropdowns) was developed as a <strong>modular React component</strong> with configurable props controlling interaction states like <code>hover</code>, <code>focus</code>, <code>disabled</code>, and <code>active</code>. 
+                    This allowed the UI Kit to display multiple visual states at once for the purpose of the UI documentation.
+                    </p>
+
+                    <img src="images/neobrutalistUI/image5.png" alt="Classes management" style="margin: 0em 0 1em 0; width: 300%;">
+                </div>
+               
+                 <p>
+                I used <strong>Tailwind</strong> to style each of the components on their files with the following approach: 
+                </p>
+                <ul>
+                <li>Grouped the component utility classes in constants for a beteter readability of the component JSX.</li>
+                <li>Applied conditional classes dynamically using <code>twMerge</code> for clean state management.</li>
+                <li>Integrated component tokens (colors, shadows) via Tailwind theming for consistency.</li>
+                </ul>
+
+                <img src="images/neobrutalistUI/image3.png" alt="Classes management" style="margin-top: 1em;">
+                <img src="images/neobrutalistUI/image4.png" alt="Classes management in JSX" style="margin-top: 1em;">
+
+                <h5 style="margin-top: 2em;">Challenges</h5>
+                <ul>
+                <li>
+                    <strong>Class organization:</strong> Keeping JSX readable while managing Tailwind utilities 
+                    required managing long Tailwind class lists into constants and merging them dynamically.
+                </li>
+                <li>
+                    <strong>Component states:</strong> Representing different states simultaneously 
+                    (hover, focus, disabled) needed flexible prop-driven logic and conditional styling.
+                </li>
+                <li>
+                    <strong>Custom variables:</strong> Experimenting with CSS variables inside Tailwind 
+                    for dynamic shadow colors (e.g. <code>shadow-[4px_4px_0_0_var(--shadow-color)]</code>).
+                </li>
+                </ul>
+            </article>
+
+            <h4>UX and Accessibility Considerations</h4>
+            <article>
+                <p>
+                Even though the aesthetic is bold and unconventional, I focused on maintaining usability and accessibility. 
+                Every component has a clear focus state, accessible color contrast, and logical tab navigation.
+                </p>
+                <ul>
+                <li>Used WCAG-compliant contrast ratios for text and focus outlines.</li>
+                <li>Ensured all interactive components include visible focus indicators.</li>
+                <li>Designed components to work without relying on color alone for state differentiation.</li>
+                </ul>
+                <img src="images/neobrutalistUI/image6.png" alt="Classes management in JSX" style="margin-top: 1em;">
+            </article>
+
+            <!-- <h4>System Thinking</h4>
+            <article>
+                <p>
+                Instead of designing isolated components, I approached this as a small-scale design system. 
+                I defined foundational tokens (color, spacing, shadows, typography) and component guidelines to ensure scalability and consistency.
+                </p>
+                <p>
+                This process helped me bridge the gap between <strong>design intent</strong> and <strong>technical implementation</strong> — 
+                a key part of UX Engineering. It made the system easier to extend, document, and share.
+                </p>
+                <img src="images/neobrutalistUI/systemDiagram.png" alt="System diagram showing tokens and components" style="margin-top: 1em;">
+            </article> -->
+
+            <h4>UI Showcase</h4>
+            <article>
+                <p>
+                Each component embraces exaggerated borders and vivid color blocks to maintain visual coherence 
+                while feeling handmade and expressive.
+                </p>
+
+                <video src="images/neobrutalistUI/video1.mov" autoplay muted loop></video>
+
+            </article>
+
+            <h4>🔍 Reflections & Learnings</h4>
+            <article>
+                <p>
+                This project taught me how to turn a bold design concept into a functional, scalable component library, balancing aesthetics with usability. I deepened my understanding of <strong>React componentization</strong>, <strong>Tailwind customization</strong>, managing multiple component states efficiently using Tailwind variants. 
+
+                </p>
+
+
+            <h5>Next steps</h5>
+                <p>
+                The Neobrutalist UI Kit is an ongoing exploration. Next I would like to add theme switching, improve accessibility, and maybe publish it as an open-source package with full documentation.
+                </p>
+                <p>
+                This project helped me refine the balance between design and engineering,
+                building systems that are not only beautiful but also functional and scalable.
+                </p>
+            </article>
+
+            <div class="buttonContainer">
+                <a href="https://neobrutalist-ui-kit.netlify.app/" class="button">See it live</a>
+                <a href="https://github.com/blancamaco/neobrutalism-ui-kit" class="button secondary">See on GitHub</a>
+            </div>
+            </section>
+        </div>
+
+        <!--FOOTER-->
+        <footer-component> </footer-component>
+
+    </body>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    <script src="js/circles.js"></script>
+    <script>AOS.init({
+            duration: 1000,
+            delay: 100
+        });</script>
+    <script type="text/javascript">function show() {
+            document.getElementById('img1').style.visibility = 'visible';
+        }
+        function hide() {
+            document.getElementById('img1').style.visibility = 'hidden';
+        }</script>
+</html>
