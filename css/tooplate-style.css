@@ -1183,7 +1183,7 @@ img {
 }
 
 .about {
-  cursor: url("../images/undraw/arrow-pointer.png"), auto;
+  cursor: url("../images/undraw/cursor-pink.png"), auto;
   background-size: 40px 40px;
   background-image:
     linear-gradient(to right, rgba(0, 0, 0, 0.12) 1px, transparent 0.5px),

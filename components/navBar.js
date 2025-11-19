@@ -25,8 +25,6 @@ class Header extends HTMLElement {
                         <a href="https://www.linkedin.com/in/blancamaco/" ><span data-hover="CV">CV</span></a>
                     
                     
-                        <a href="index.html#contact" ><span data-hover="Contact">Contact</span></a>
-                    
         
                     
                     </div>
