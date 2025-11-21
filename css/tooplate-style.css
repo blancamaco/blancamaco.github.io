@@ -846,9 +846,8 @@ h6 {
 
 .window {
   background: #fff;
-  /*width: 50vw;*/
+  width: min(750px, 100%);
   height: auto;
-  margin: auto;
   margin-top: 12.5vh;
   margin-bottom: 12.5vh;
   /*border: 1px solid #acacac;*/
@@ -1184,6 +1183,7 @@ img {
 
 .about {
   cursor: url("../images/undraw/cursor-pink.png"), auto;
+  align-content: center;
   background-size: 40px 40px;
   background-image:
     linear-gradient(to right, rgba(0, 0, 0, 0.12) 1px, transparent 0.5px),
