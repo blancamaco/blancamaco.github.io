@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>FACEIT Voice & Chat</title>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/unicons.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/circles.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/tooplate-style.css">
+        <script src="components/footer.js" type="text/javascript" defer></script>
+        <script src="components/navBar.js" type="text/javascript" defer></script>
+    </head>
+
+
+<body class="backgroundNotebook" style="margin:0;">
+
+    <!-- MENU HEADER -->
+    <header-component></header-component>
+
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; width: 100%; margin-top: 8rem; padding: 0 15px 0 15px;">
+        <section id="faceit-mobile-widget" style="max-width: 800px;">
+            
+            <div class="hero-section">
+                <h1>Improving engagement with ELO Mobile Widget</h1>
+                <img src="images/FACEIT/widget/image1.png" class="img-fluid" alt="FACEIT Mobile App"> 
+            </div>
+
+            <h4>Project Overview</h4>
+            <article>
+                <p>The <strong>FACEIT mobile App</strong> is the mobile extension of FACEIT, one of the world’s leading competitive gaming platforms. It was designed to bring e-sports and competitive gaming into a portable environment. The app allows players to manage their gaming experience anytime, anywhere. It helps users track stats, join leagues, add reminders for matches, and stay in touch with the community and their friends.</p>
+            </article>
+
+            <h4>Problem Statement</h4>
+            <article>
+                <div style="display: flex; gap: 40px;">
+                    <div style="width: 50%;">
+                        <h5>Objective</h5>
+                        <p>Increase user engagement on mobile and convert that engagement into more gameplay on the FACEIT desktop platform.</p>
+
+                        <h5>Challenge</h5>
+                        <p>Determine what type of widget could meaningfully support engagement goals and guide users from mobile interactions to desktop play.</p>
+                    </div>
+                    <div style="width: 50%;">
+                        <h5>Opportunity</h5>
+                        <p>The mobile app lacked widgets, presenting a chance to place FACEIT directly on users’ home screens and create consistent daily touchpoints.</p>
+
+                        <h5>Insight</h5>
+                        <p>FACEIT players are motivated by <strong>competitiveness and social validation</strong>. Currently, they must open the app intentionally to track their performance.</p>
+                    </div>
+                </div>
+
+                        <h5>Hypothesis</h5>
+                        <p>A stats widget that shows users their top three performance metrics from their last five matches could encourage more people to install the FACEIT mobile widget and check the app more often. Seeing their progress on the home screen gives quick reminders, boosts competitive motivation, and draws players back in to keep improving.</p>
+                <img src="images/FACEIT/widget/image2.png" class="img-fluid" alt="FACEIT Mobile App"> 
+            </article>
+
+            <h4>Research & Discovery</h4>
+            <article>
+                <h5>User Research</h5>
+                <p>We mapped the main KPIs users use to track their progress and conducted a survey to understand which ones were more useful for them. This helped us decide which KPIs to prioritize when designing the widget.</p>
+                <img src="images/FACEIT/widget/image3.png" class="img-fluid" alt="User Research Screenshot" style="margin-bottom: 2em;">
+    
+                
+                <h5>Competitive Analysis</h5>
+                <p>We examined mobile widgets emphasizing <strong>tracking personal progress</strong>, showing how achievements and performance metrics can be surfaced on the home screen. This revealed effective ways to make progress <strong>visible and engaging</strong>, encouraging users to check their status regularly.</p>
+                <img src="images/FACEIT/widget/image4.png" class="img-fluid" alt="User Research Screenshot">
+            </article>
+
+            <h4>Design Process</h4>
+            <article>
+                <h5>Ideation</h5>
+                <p>I explored a wide range of <strong>information architecture options</strong> for the widget, from a <strong>simple level-meter design</strong> highlighting a single key metric to a <strong>more complex layout</strong> showing multiple KPIs and detailed performance data.</p>
+                <p>After presenting several directions to stakeholders, we agreed on <strong>two promising options</strong>, which were tested with users to gather feedback.</p>
+                <img src="images/FACEIT/widget/image4.1.png" class="img-fluid" alt="Ideation" style="margin-bottom: 2em;">
+
+
+                <h5>User Testing</h5>
+                <p>We ran a survey evaluating both directions, <strong>Design A (simple)</strong> and <strong>Design B (detailed)</strong>, with our Discord community. Feedback focused on usefulness, clarity, missing data, and preference.</p>
+                <div style="display: flex; gap: 20px;">
+                     <img src="images/FACEIT/widget/image5.1.png" class="img-fluid" alt="User test" style="margin-bottom: 2em;">
+                     <img src="images/FACEIT/widget/image5.png" class="img-fluid" alt="User test" style="margin-bottom: 2em;">
+                </div>
+
+                <div style="display: flex; gap: 20px; align-items: center;">
+                    <div>
+                        <ul>
+                            <li><strong>Design B was preferred</strong> for richer, more detailed data.</li>
+                            <li><strong>Design A</strong> appealed for simplicity but lacked clarity.</li>
+                            <li>Background colors were easier to interpret in Design B.</li>
+                            <li>Users requested <strong>more meaningful metrics</strong> and less clutter.</li>
+                        </ul>
+
+                        <p>The results validated a direction toward a <strong>comprehensive widget</strong> that balances detail with clarity.</p>
+                    </div>
+                    <!-- <img src="images/FACEIT/widget/image6.png" class="img-fluid" alt="Ideation" style="margin-bottom: 2em"> -->
+
+                </div>
+
+            
+            </article>
+
+            <h4>Solution</h4>
+            <article>
+
+                <p>I iterated on the widget design based on feedback to balance detailed metrics with clarity. Key improvements included:</p>
+                <div style="display: flex; gap: 20px;">
+                    <img src="images/FACEIT/widget/image8.png" class="img-fluid" alt="Ideation" style="margin-bottom: 2em;">
+                    <img src="images/FACEIT/widget/image7.5.png" class="img-fluid" alt="Ideation" style="margin-bottom: 2em;">
+                </div>
+
+                <ul>
+                    <li><strong>More meaningful stats at a glance:</strong> kept detailed metrics but organized them for easier scanning.</li>
+                    <li><strong>Cleaner structure and hierarchy:</strong> improved spacing, grouping, and typography.</li>
+                    <li><strong>Clearer background indicators:</strong> colors redesigned for quick understanding.</li>
+                    <li><strong>Home-screen friendly:</strong> compact design despite added details.</li>
+                </ul>
+                <p>I had also to design the variations for each of the players possible levels and ranks in order to show the most useful KPIs for each case.</p>
+                <img src="images/FACEIT/widget/image7.png" class="img-fluid" alt="Ideation" style="margin-bottom: 2em">
+
+            </article>
+
+            <h4>Results & Impact</h4>
+            <article>
+                <div style="display: flex; gap: 20px; align-items: center;">
+                    <div>
+                        <ul>
+                            <li>Users found the final widget <strong>more informative</strong> without being overwhelming (source: Discord server).</li>
+                            <li><strong>Progress indicators</strong> made performance trends easier to understand.</li>
+                           
+                                <li>Increased daily app opens from widget taps: <strong>+27% </strong>vs. users without the widget.</li> 
+                                <li>Players with the widget increased their match frequency after adding it: <strong>+12%</strong> vs. users without the widget.</li>
+                            <li>Users shared the widget on social media, increasing social awareness.</li>
+                        </ul>
+                        <p>Overall, the widget boosted engagement with both the FACEIT mobile app and desktop platform.</p>
+                    </div>
+                    <img src="images/FACEIT/widget/image9.png" class="img-fluid" alt="Ideation" style="margin-bottom: 2em">
+
+                </div>
+
+            </article>
+
+            <h4>Challenges & Learnings</h4>
+            <article>
+                <p>One of the main challenges was balancing the amount of data shown on the widget because users wanted detailed stats, but too much information could feel overwhelming. Designing for simplicity while still providing meaningful insights was tricky.</p>
+                <p>It was also important that the widget didn’t demotivate users who were on a losing streak or seeing their stats drop. To avoid negative reinforcement, the design keeps colors and feedback neutral, focusing on progress rather than setbacks.</p>
+                <p>Also with this project I learned the value of iterating closely with users to refine the information hierarchy and clarity, that small visual and interaction tweaks can significantly improve engagement, and that providing meaningful insights often matters more than minimalism.</p>
+
+            
+            </article>
+
+            <h4>Next Steps</h4>
+            <article>
+                <p>Future iterations will expand the widget to emphasize social competitiveness, allowing users to compare performance with friends, increasing motivation and driving more gameplay on mobile and desktop.</p>
+            </article>
+
+        </section>
+    </div>
+
+    <!--FOOTER-->
+    <footer-component></footer-component>
+
+</body>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/circle-progress.min.js"></script>
+    <script src="js/circles.js"></script>
+    <script>AOS.init({
+            duration: 1000,
+            delay: 100
+        });</script>
+    <script type="text/javascript">function show() {
+            document.getElementById('img1').style.visibility = 'visible';
+        }
+        function hide() {
+            document.getElementById('img1').style.visibility = 'hidden';
+        }</script>
+</html>
