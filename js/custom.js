@@ -36,3 +36,29 @@
     $('.social-links a').tooltip();
 
 })(jQuery);
+
+
+// filtering
+
+const filtering = (filter) => {
+  const items = document.querySelectorAll('.project');
+  const filtersList = document.querySelectorAll("#filters a");
+
+  items.forEach(item => {
+    let categories = item.dataset.category;
+    let categoriesArray = categories.split(' '); //array con las categorias del proyecto
+
+    item.style.display = (categoriesArray.includes(filter) || filter == "all") ?
+      'inline-flex' :
+      'none';
+  })
+
+  filtersList.forEach(item => {
+    if(item.dataset.category === filter){
+      item.classList.add("selected");
+    } else {
+      item.classList.remove("selected");
+    }
+  })
+
+}

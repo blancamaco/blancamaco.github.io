@@ -1126,6 +1126,14 @@ img {
   width: 1170px;
 }
 
+#projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+
 .project {
   display: flex;
   flex-direction: column;
@@ -1203,4 +1211,30 @@ img {
 
 .hobby:hover{
   transform: rotate(5deg);
+}
+
+#filters{
+  display: flex;
+  gap: 1.3em;
+}
+
+#filters a {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #a5a5a5;
+}
+
+#filters a:hover {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: rgb(255, 168, 162);
+;
+  
+}
+
+
+#filters a.selected {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #353535;
 }

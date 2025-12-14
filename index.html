@@ -122,16 +122,25 @@
     <div class="portfolio">
       <!--WORK-->
       <section id="projects">
-        <div style="display: flex; justify-content: center; margin: 2em 2em;">
-          <h1 style="width: 1170px;">Projects</h1>
+        <div style="display: flex; flex-direction: column; justify-content: center; margin: 2em 2em; width: 1170px;">
+          <div>
+            <h1 style="width:100%">Projects</h1>
+          </div>
+          
+          <div id="filters">
+            <a data-category="all" class="selected" onclick="filtering('all')">All</a>
+            <a data-category="design" onclick="filtering('design')">Product Design</a>
+            <a data-category="frontend" onclick="filtering('frontend')">Frontend</a>
+          </div>
         </div>
+
         
         <div class="projectsContainer">
           <div class="projects">
 
 
               <!-- FACEIT Widget -->
-              <div class="project">
+              <div class="project" data-category="design">
                 <div class="image">
                   <a href="faceitWidget.html">
                     <img src="images/FACEIT/widget/faceitWidget.png" class="img-fluid" alt="portfolio image">
@@ -150,7 +159,7 @@
               </div>
 
               <!-- FACEIT Voice and Chat -->
-              <div class="project">
+              <div class="project" data-category="design">
                 <div class="image">
                   <a href="faceitVoiceAndChat.html">
                     <img src="images/FACEIT/faceit.png" class="img-fluid" alt="portfolio image">
@@ -169,7 +178,7 @@
               </div>
 
               <!-- UI Kit -->
-              <div class="project">
+              <div class="project" data-category="frontend">
                 <div class="image">
                   <a href="neobrutalistUIKit.html">
                     <img src="images/uiKitHeader.png" class="img-fluid" alt="portfolio image">
@@ -197,7 +206,7 @@
               </div>
 
               <!-- Vinyl Player -->
-              <div class="project">
+              <div class="project" data-category="frontend">
                 <div class="image">
                   <a href="vinylPlayer.html">
                     <img src="images/vinylHeader.png" class="img-fluid" alt="portfolio image">
@@ -222,7 +231,7 @@
               </div>
 
               <!-- Tuna Voicemod -->
-              <div class="project">
+              <div class="project" data-category="design">
                 <div class="image">
                   <a href="voicemodTunaSearch.html">
                     <img src="images/Voicemod/Search/tunaHeader.png" class="img-fluid" alt="portfolio image">
@@ -238,7 +247,7 @@
               </div>
 
               <!-- Voicemod Clips -->
-              <div class="project">
+              <div class="project" data-category="design">
                 <div class="image">
                   <a href="voicemodClips.html">
                     <img src="images/Voicemod/Clips/clipsHeader.png" class="img-fluid" alt="portfolio image">
@@ -254,7 +263,7 @@
               </div>
 
               <!-- Geoblink -->
-              <div class="project">
+              <div class="project" data-category="design">
                 <div class="image">
                   <a href="geoblink.html">
                     <img src="images/Portfolio-Geoblink-WEB.png" class="img-fluid" alt="portfolio image">
@@ -270,7 +279,7 @@
               </div>
 
               <!-- Printeria -->
-              <div class="project">
+              <div class="project" data-category="design frontend">
                 <div class="image">
                   <a href="printeria.html">
                     <img src="images/Portfolio-Printeria-WEB-2.png" class="img-fluid" alt="portfolio image">
@@ -291,7 +300,7 @@
               </div>
 
               <!-- iGEM -->
-              <div class="project">
+              <div class="project" data-category="design frontend">
                 <div class="image">
                   <a href="webigem.html">
                     <img src="images/Portfolio-iGEM-WEB-2.png" class="img-fluid" alt="portfolio image">
@@ -313,7 +322,7 @@
               </div>
 
               <!-- Tutorio -->
-              <div class="project" style="max-width: 549px;">
+              <div class="project" data-category="design" style="max-width: 549px;">
                 <div class="image">
                   <a href="tutorio.html">
                     <img src="images/Portfolio-Tutorio-WEB-2.png" class="img-fluid" alt="portfolio image">
@@ -335,7 +344,7 @@
               </div>
 
               <!-- Tutorio -->
-              <div class="project" style="max-width: 549px;">
+              <div class="project" data-category="design" style="max-width: 549px;">
  
               </div>
 
