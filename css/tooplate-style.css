@@ -7,8 +7,11 @@ https://www.tooplate.com/view/2115-marvel
 */
 
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 body {
     /*font-family: "Maven Pro", sans-serif;*/
     font-family: 'Lato', sans-serif;
@@ -81,13 +84,13 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   /*font-weight: bold;*/
-  letter-spacing: -1px;
+  letter-spacing: auto;
   font-weight: 500;
   color: #5b5b5b;
 }
 
 h1 {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Source Code Pro", monospace;
   font-weight: bold;
   color: #212121;
   font-size: 2.5em;
@@ -95,15 +98,28 @@ h1 {
 }
 
 h2 {
-  font-family: 'Roboto Mono', monospace;
-  color: #353535;
+  font-family: "Source Code Pro", monospace;
+  color: #6a6969;
   font-size: 1.2em;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 400;
+  letter-spacing: -1px;
 }
 
 .project h4{
   margin: 0px;
+}
+
+.project p{
+  color: rgb(141, 140, 140);
+  font-weight: 400;
+}
+
+.project .text{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: left; 
+  gap: 0.5em;
 }
 
 .color-subtitle{
@@ -154,7 +170,7 @@ h5 {
 
 h6 {
   color: #353535;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Source Code Pro", monospace;
   font-weight: 400;
   margin-bottom: 1em;
 }
@@ -368,7 +384,7 @@ h6 {
   left: 0;
   z-index: 999999;
   will-change: transform;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Source Code Pro", monospace;
   background-color: white;
   border-bottom: 1px solid #e3e3e3;
   display: flex;
@@ -549,22 +565,24 @@ h6 {
 }
 .timeline-wrapper:before {
   content: "";
-  background: rgb(51, 49, 51) 7px;
+  background: rgb(190, 188, 190) 7px;
   width: 7px;
   height: 100%;
   position: absolute;
-  left: 17px;
+  left: 7px;
+  margin-top:10px;
 }
 
 .timeline-yr {
-  background: #FFFFFF;
+  background: rgb(75, 74, 75) 7px;
   border-radius: 100%;
-  border: solid rgb(51, 49, 51) 7px;
+  border: solid rgb(75, 74, 75) 7px;
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   line-height: 75px;
   text-align: center;
+  margin-top:10px;
 }
 .timeline-yr span {
   color: #000;
@@ -578,7 +596,7 @@ h6 {
   display: inline-block;
   vertical-align: top;
   max-width: 70%;
-  margin-left: 6em;
+  margin-left: 4em;
 }
 .timeline-info small {
   color: solid rgb(51, 49, 51) 7px;
@@ -850,14 +868,15 @@ h6 {
   height: auto;
   margin-top: 12.5vh;
   margin-bottom: 12.5vh;
-  /*border: 1px solid #acacac;*/
-  border-radius: 6px;
-  box-shadow: 0px 0px 20px #acacac;
+  border: 1px solid #b7b4b4;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 20px #5a5a5a87; */
+  box-shadow: -12px 12px 0px #5a5a5a5b;
 }
 
 .titlebar {
   background:  #d5d5d5;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
   color: #4d494d;
   font-size: 11pt;
   line-height: 30px;
@@ -886,6 +905,7 @@ h6 {
   height: 15px;
   border-radius: 50%;
   display: inline-block;
+  border: 1px solid #d14b4b;
 }
 
 
@@ -893,6 +913,7 @@ h6 {
   color: #820005;
   visibility: hidden;
   cursor: default;
+  border: 1px solid #820005;
 }
 
 .minimize {
@@ -904,6 +925,7 @@ h6 {
   height: 15px;
   border-radius: 50%;
   display: inline-block;
+  border: 1px solid #e1a742;
 }
 
 
@@ -923,6 +945,7 @@ h6 {
   height: 15px;
   border-radius: 50%;
   display: inline-block;
+  border: 1px solid #01b44f;
 }
 
 
@@ -1082,31 +1105,52 @@ img {
 }
 
 .pill {
-  background-color: rgb(255, 168, 162);
-  color: white;
-  border-radius: 20px;
   width: fit-content;
+  border-radius: 20px;
+  /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.167); */
 }
 
 .pill h6 {
+  background-color: rgb(252, 233, 231);
   margin: 0;
   padding: 8px 16px;
+  font-weight: 500;
+  border-radius: 20px;
+  color: rgb(236, 122, 114);
+  /* box-shadow: 0px 0px 7px rgba(236, 122, 114, 0.355); */
+  /* border: 1px solid rgb(236, 122, 114); */
 }
 
-.blue {
-  background-color: #9ac7fa;
+.blue h6{
+  background-color: #e1eefd;
+  border-radius: 20px;
+  color: #4388d7;
+  /* box-shadow: 0px 0px 7px #4388d764; */
+  /* border: 1px solid #4388d7; */
 }
 
-.green {
-  background-color: #a3f7c6;
+.green  h6{
+  background-color: #dcffea;
+  border-radius: 20px;
+  color: #5f9b78;
+  /* box-shadow: 0px 0px 7px #5f9b7864; */
+  /* border: 1px solid #5f9b78; */
 }
 
-.orange {
-  background-color: #fcd29f;
+.orange h6{
+  background-color: #ffeed7;
+  border-radius: 20px;
+  color: #e1891d;
+  /* box-shadow: 0px 0px 7px #e1891d64; */
+  /* border: 1px solid #e1891d; */
 }
 
-.cian {
-  background-color: #aaeeff;
+.cian h6{
+  background-color: #d8f5fc;
+  border-radius: 20px;
+  color: #39a9c5;
+  /* box-shadow: 0px 0px 7px #39a9c564; */
+  /* border: 1px solid #39a9c5; */
 }
 
 
@@ -1115,6 +1159,9 @@ img {
   display:flex; 
   align-items:center; 
   justify-content: center;
+  width: fill;
+  /* Fallback para navegadores antiguos */
+  width: -webkit-fill-available;
 }
 
 .projects {
@@ -1127,10 +1174,10 @@ img {
 }
 
 #projects{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   margin-top: 3em;
 }
 
@@ -1140,8 +1187,14 @@ img {
   flex: 1 1 355px;
   align-items: start;
   gap: 1em;
-  max-width: 558px;
+  max-width: fill;
   min-width: 0px;
+  /*style with cards*/
+  /*
+  background-color: rgb(254, 243, 245);
+  border: 1px solid rgb(241, 226, 229);
+  border-radius: 12px;
+  padding: 16px;*/
 }
 
 .project img {
@@ -1151,7 +1204,7 @@ img {
 
 .project img:hover {
   transform: translate(5px, -5px);
-  box-shadow: -10px 10px 0px rgb(255, 122, 112);
+  box-shadow: -10px 10px 0px #a5a5a5;
 }
 
 .gridContainer {
@@ -1186,7 +1239,7 @@ img {
   flex-direction: column;
   gap: 3em;
   justify-content: center;
-  margin-top: 3em;
+  /* margin-top: 3em; */
 }
 
 .about {
@@ -1216,20 +1269,21 @@ img {
 #filters{
   display: flex;
   gap: 1.3em;
+  margin-bottom: 1em;
 }
 
 #filters a {
-  font-weight: bold;
+  font-weight: 900;
   font-size: 1.5em;
+  font-family: 'Lato', sans-serif;
   color: #a5a5a5;
 }
 
 #filters a:hover {
   font-weight: bold;
   font-size: 1.5em;
-  color: rgb(255, 168, 162);
-;
-  
+  color: #353535;
+  text-decoration: none !important;
 }
 
 
