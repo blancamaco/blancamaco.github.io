@@ -1204,7 +1204,7 @@ img {
 
 .project img:hover {
   transform: translate(5px, -5px);
-  box-shadow: -10px 10px 0px #a5a5a5;
+  box-shadow: -10px 10px 0px #e3e3e3;
 }
 
 .gridContainer {
@@ -1291,4 +1291,19 @@ img {
   font-weight: bold;
   font-size: 1.5em;
   color: #353535;
+}
+
+
+/*custom details*/
+
+.box-item{
+  background-color: #ffffff;
+  border: 1px solid rgb(250, 171, 171);
+  border-radius: 8px;
+  padding: 1em; 
+  margin-bottom: 2em;
+}
+
+.box-item p {
+  margin-bottom: 0px;
 }
