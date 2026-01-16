@@ -1,0 +1,92 @@
+/* Dark theme: variables + component overrides
+   Toggle by adding the class `dark-mode` to the root (e.g. <body class="dark-mode">)
+   Also supports automatic dark preference via prefers-color-scheme.
+*/
+
+.dark-mode {
+  --color-text-primary: #e6e6e6;
+  --color-text-secondary: #cfcfcf;
+  --color-text-muted: #9aa0a6;
+  --color-text-heading: #ffffff;
+  --color-accent: #ff8a80;
+  --color-accent-light: #ffb4a9;
+  --color-surface-panel: #171717;
+  background-color: #0b0b0d;
+  color: var(--color-text-secondary);
+}
+
+/* Smooth transitions when toggling theme */
+body, .box-item, .window, .navbar, .footer, .project img, .contact-info {
+  transition: background-color 240ms ease, color 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
+}
+
+/* Component overrides for dark mode */
+.dark-mode body, .dark-mode {
+  background-color: #0b0b0d;
+  color: var(--color-text-secondary);
+}
+
+.dark-mode .navbar {
+  background-color: #0c0c0d;
+  border-bottom: 1px solid #222;
+}
+
+.dark-mode .navbar a {
+  color: var(--color-text-primary);
+}
+
+.dark-mode .footer {
+  background: linear-gradient(135deg, #1b1b1d 0%, #2a2a2b 80%);
+}
+
+.dark-mode .footer a, .dark-mode .footer i {
+  color: #d7d7d7;
+}
+
+.dark-mode .box-item {
+  background-color: #121214;
+  border: 1px solid #262626;
+}
+
+.dark-mode .window {
+  background: #0f0f10;
+  border: 1px solid #262626;
+  box-shadow: -12px 12px 0px rgba(0,0,0,0.6);
+}
+
+.dark-mode .contact-info {
+  background: #1b1b1d;
+}
+
+.dark-mode .project p, .dark-mode p {
+  color: var(--color-text-muted);
+}
+
+.dark-mode .custom-btn {
+  background: #1b1b1d;
+  color: var(--color-text-primary);
+}
+
+.dark-mode .custom-btn.custom-btn-bg {
+  background: var(--color-accent);
+  color: #111;
+}
+
+.dark-mode .pill a, .dark-mode .pill h6 {
+  background-color: #1a1a1a;
+  color: var(--color-text-secondary);
+}
+
+/* Prefer dark scheme automatically */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text-primary: #e6e6e6;
+    --color-text-secondary: #cfcfcf;
+    --color-text-muted: #9aa0a6;
+    --color-text-heading: #ffffff;
+    --color-accent: #ff8a80;
+    --color-accent-light: #ffb4a9;
+    --color-surface-panel: #171717;
+    background-color: #0b0b0d;
+  }
+}
